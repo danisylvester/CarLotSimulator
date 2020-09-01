@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace CarLotSimulator
 {
@@ -6,21 +7,32 @@ namespace CarLotSimulator
     {
         static void Main(string[] args)
         {
-            //TODO
-
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property            
-
-
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
 
-            //*************BONUS*************//
+            var corolla05 = new Car()
+            {
+                Model = "Corolla",
+                Make = "Toyota",
+                Year = 2005,
+                IsDriveable = true,
+                EngineNoise = "klunk klunk",
+                HonkNoise = "beep beep"
+            };
 
-            // Set the properties utilizing the 3 different ways we learned about, one way for each car
+            var subaru20 = new Car();
+            subaru20.Make = "Subaru";
+            subaru20.Model = "Outback";
+            subaru20.Year = 2020;
+            subaru20.IsDriveable = true;
+            subaru20.EngineNoise = "vroom vroom";
+            subaru20.HonkNoise = "HONK!";
+
+            var jeep00 = new Car(2000, "Jeep", "Rangler", false, "rhrhrhroom", "hoonnk");
+
+
+
 
             //*************BONUS X 2*************//
 
