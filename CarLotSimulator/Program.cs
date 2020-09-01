@@ -31,7 +31,13 @@ namespace CarLotSimulator
 
             var jeep00 = new Car(2000, "Jeep", "Rangler", false, "rhrhrhroom", "hoonnk");
 
+            corolla05.MakeHonkNoise();
+            subaru20.MakeHonkNoise();
+            jeep00.MakeHonkNoise();
 
+            corolla05.MakeEngineNoise();
+            subaru20.MakeEngineNoise();
+            jeep00.MakeEngineNoise();
 
 
             //*************BONUS X 2*************//

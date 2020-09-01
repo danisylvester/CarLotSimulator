@@ -19,7 +19,6 @@ namespace CarLotSimulator
             IsDriveable = driveable;
             EngineNoise = engineNoise;
             HonkNoise = horn;
-
         }
         public int Year { get; set; }
         public string Make { get; set; }
@@ -30,14 +29,14 @@ namespace CarLotSimulator
 
         public void MakeEngineNoise()
         {
-
+            Console.WriteLine($"{Model} engine noise: {EngineNoise}");
             
         }
 
         public void MakeHonkNoise()
         {
-                        
-                 
+            Console.WriteLine($"{Model} horn noise: {HonkNoise}");
+
         }
 
 
