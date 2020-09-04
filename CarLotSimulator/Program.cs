@@ -24,6 +24,7 @@ namespace CarLotSimulator
                 HonkNoise = "beep beep"
             };
 
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
             myCarLot.CarsList.Add(corolla05); // Adding corolla obj to my car lot list.
 
             // Instantiating my second car.
@@ -35,23 +36,30 @@ namespace CarLotSimulator
             subaru20.EngineNoise = "vroom vroom";
             subaru20.HonkNoise = "HONK!";
 
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
             myCarLot.CarsList.Add(subaru20); // Adding the subaru obj to my car lot list.
 
             // Instantiating my third car.
             var jeep00 = new Car(2000, "Jeep", "Rangler", false, "rhrhrhroom", "hoonnk");
 
+            Console.WriteLine($"Number of cars: {CarLot.numberOfCars}");
             myCarLot.CarsList.Add(jeep00); // Adding the jeep obj to my car lot list.
 
             // Calling the Car MakeHonkNoise method for each object.
             corolla05.MakeHonkNoise();
             subaru20.MakeHonkNoise();
             jeep00.MakeHonkNoise();
+            Console.WriteLine();
 
             // Calling the Car MakeEngineNoise method for each object.
+            Console.WriteLine("................................");
             corolla05.MakeEngineNoise();
             subaru20.MakeEngineNoise();
             jeep00.MakeEngineNoise();
+            Console.WriteLine();
 
+            // Iterate through the list printing each of car's Year, Make, and Model to the console
+            Console.WriteLine("................................");
             foreach (var car in myCarLot.CarsList)
             {
                 Console.Write($"{car.Year} ");
@@ -61,7 +69,6 @@ namespace CarLotSimulator
 
 
 
-            //At the end iterate through the list printing each of car's Year, Make, and Model to the console
         }
     }
 }

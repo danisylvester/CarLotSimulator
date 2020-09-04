@@ -6,8 +6,9 @@ namespace CarLotSimulator
 {
     class CarLot
     {
-
         public List<Car> CarsList { get; set; }
+        public static int numberOfCars;
+
 
     }
 }
